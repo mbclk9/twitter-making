@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Logo(){
     return(
-        <Link to="/" className=" w-[52px] h-[52px] rounded-full flex items-center justify-center hover:bg-[#eff3f41a]  transition-colors">
+        <Link to="/" className=" w-[50px] h-[50px] rounded-full flex items-center justify-center hover:bg-[#eff3f41a]  transition-colors">
             <svg viewBox="0 0 24 24" width={30} height={30} >
                 <path
                 fill="#fff"

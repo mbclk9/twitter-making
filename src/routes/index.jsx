@@ -3,6 +3,12 @@ import Home from "../pages/home";
 import Explore from "../pages/explore";
 import Notifications from "../pages/notifications";
 import MainLayout from "../layouts/main";
+import Profile from "../pages/profile";
+import Messages from "../pages/messages";
+import Lists from "../pages/lists";
+import Community from "../pages/community";
+import Premium from "../pages/premium";
+import Bookmarks from "../pages/bookmarks";
 
 
  const routes = createBrowserRouter([
@@ -24,6 +30,30 @@ import MainLayout from "../layouts/main";
                     path: 'notifications',
                     element: <Notifications />
                 },
+                {
+                    path: 'messages',
+                    element:<Messages/>
+                },
+                {
+                    path: 'lists',
+                    element: <Lists/>
+                },
+                {
+                    path: 'bookmarks',
+                    element: <Bookmarks/>
+                },
+                {
+                    path: 'community',
+                    element: <Community />
+                },
+                {
+                    path: 'premium',
+                    element: <Premium/>
+                },
+                {
+                    path: ':slug',
+                    element: <Profile />
+                }
         ]
     },
    
