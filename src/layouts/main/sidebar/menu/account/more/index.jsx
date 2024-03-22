@@ -1,15 +1,23 @@
+import { setCurrentAccount } from "../../../../../../store/auth/actions"
 import { useAccount, useAccounts } from "../../../../../../store/auth/hooks"
 import classNames from "classnames"
 
 
-export default function More(){
+export default function More({close}){
     const accounts= useAccounts()
     const currentAccount = useAccount()
     return(
     <div className=" py-4 ">
         <div  className=" justify-center">
             {accounts.map(account => (
-                <button key={account.username}  className= {classNames("py-3 px-4 flex items-center w-full transition-colors cursor-default",{
+
+                <button
+                type="button"
+                onClick={() => {
+                    setCurrentAccount(account)
+                    close()
+                } }
+                key={account.username}  className= {classNames("py-3 px-4 flex items-center w-full transition-colors cursor-default",{
                     "hover:bg-[#eff3f41a] cursor-pointer" :currentAccount.id !== account.id 
                 })} >
                     <img src={account.avatar} alt="" width={40} height={40} className="rounded-full" />

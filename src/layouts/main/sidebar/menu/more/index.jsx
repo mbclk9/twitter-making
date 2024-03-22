@@ -14,7 +14,7 @@ export default function More(){
                         </svg>
                     </div>
                         <div className="text-xl text-[#e6e9ea] pr-4">
-                            Daha Fazla
+                            Daha fazla
                         </div>
                 </div>
             </button>

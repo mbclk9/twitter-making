@@ -1,6 +1,7 @@
 import store from "../store"
 
 const states =store.getState()
+
 export const mainMenu = [
     {
         path:'/',
@@ -145,7 +146,7 @@ export const mainMenu = [
     },
     {
         path:'/premium',
-        title:'Premium',
+        title:'Get Premium',
         icon:{
             active:(
                 <svg viewBox="0 0 24 24" width={26.25} height={26.25} >
@@ -184,4 +185,92 @@ export const mainMenu = [
         }
     }
 
+]
+
+export const topics =[
+    {
+        title:'Haberler - Gündemdekiler',
+        topic:{
+            type:'tag',
+            value:'Sınav Sonuçları Açıklandı'
+        },
+        
+    },
+    {
+        title:'Türkiye tarihinde gündemde',
+        topic:{
+            type:'regular',
+            value:'Nowruz'
+        },
+        postCount:40.3
+    },
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'regular',
+            value: 'Ramazan Bayramı'
+        },
+        postCount: 25.8
+    },
+    {
+        title:'Spor - Gündemdekiler',
+        topic:{
+            type:'regular',
+            value:'Süper Kupa'
+        },
+        
+    },
+    
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'regular',
+            value: 'Kurban Bayramı'
+        },
+        postCount: 33.6
+    },
+    
+    {
+        title: 'Türkiye tarihinde gündemde',
+        topic: {
+            type: 'regular',
+            value: '29 Ekim Cumhuriyet Bayramı'
+        },
+        postCount: 18.9
+    },
+    
+    {
+        title:'Spor - Gündemdekiler',
+        topic:{
+            type:'tag',
+            value:'Samsunsporlu'
+        },
+        postCount:10.3
+    },
+    
+    {
+        title: 'Türkiye tarihinde gündemde',
+    topic: {
+    type: 'regular',
+    value: '23 Nisan Ulusal Egemenlik ve Çocuk Bayramı'
+    },
+    postCount: 22.1
+    },
+    
+    {
+    title: 'Türkiye tarihinde gündemde',
+    topic: {
+    type: 'regular',
+    value: 'Türkiye Cumhuriyeti Devlet Bayramı'
+    },
+    postCount: 27.4
+    },
+    {
+    title: 'Türkiye tarihinde gündemde',
+    topic: {
+    type: 'tag',
+    value: 'Zafer Bayramı'
+    },
+    postCount: 30.2
+    }
 ]

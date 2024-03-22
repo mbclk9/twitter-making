@@ -3,10 +3,14 @@ import classNames from "classnames";
 import { mainMenu } from "../../../../utils/consts";
 import More from "./more";
 import New from "./new";
+import { useAccount } from "../../../../store/auth/hooks";
 
 export default function Menu(){
+
+    const account = useAccount()
+
     return(
-        <nav className="mt-0.5 mb-1">
+        <nav className="mt-0.5 mb-1" key={account.id}>
                 {mainMenu.map((menu, index)=>(
                     // eslint-disable-next-line react/jsx-key
                     <NavLink to={menu.path} key={index} className=" block group">

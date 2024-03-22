@@ -10,7 +10,7 @@ export default function Account(){
     return(
         <div className="mt-auto">
             <Popover className="relative">
-                <Popover.Button className="my-3 p-3 outline-none rounded-full  hover:bg-[#eff3f41a] transition-colors w-full flex  items-center justify-between">
+                <Popover.Button className="my-3 p-3 outline-none rounded-full  hover:bg-[#eff3f41a] transition-colors w-full flex  items-center">
                     <img src={account.avatar} alt="" width={40} height={40} className="rounded-full" />
                     <div className="mx-3 text-[15px] text-left ">
                         <h6 className=" font-bold">{account.fullname}</h6>
@@ -18,7 +18,7 @@ export default function Account(){
                         @{account.username}
                     </div>
                     </div>
-                    <div className="items-center">
+                    <div className="items-center ml-auto">
                         <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
                                 <path 
                                 fill="#e6e9ea"
@@ -34,8 +34,11 @@ export default function Account(){
                     leaveFrom="transform  opacity-100"
                     leaveTo="transform  opacity-0"
                 >
-                <Popover.Panel className="absolute bottom-0 w-[300px] left-0 bg-black shadow-box rounded-2xl overflow-hidden ml-[-20px]  ">
-                    <More/>
+                <Popover.Panel className="absolute bottom-[80px] w-[300px] left-0 bg-black shadow-box rounded-2xl overflow-hidden ml-[-20px]  ">
+                   {({close}) => (
+                       <More close={close}/>
+
+                   )}
                 </Popover.Panel>
                 </Transition>
             </Popover>
