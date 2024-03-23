@@ -5,9 +5,9 @@ export default function Topic({item}){
     return(
         <Link 
         to="/"
-        className="py-3 px-4 transition-colors hover:bg-[#eff3f41a] flex justify-between"
+        className="py-3 px-4 transition-colors hover:bg-[#eff3f41a] flex justify-between "
         >
-            <div className="flex flex-col gap-0.5">
+            <div className="flex flex-col gap-0.5 ">
                 <div className=" text-[13px] leading-4 font-normal text-[#71767b]">
                     {item.title}
                 </div>

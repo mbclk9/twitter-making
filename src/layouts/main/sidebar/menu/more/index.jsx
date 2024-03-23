@@ -19,7 +19,7 @@ export default function More(){
                 </div>
             </button>
         </Popover.Button>
-        <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-black shadow-box rounded-xl overflow-hidden ">
+        <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-black shadow-box rounded-xl overflow-hidden z-10">
                     <button className="p-3 h-14 w-full inline-flex items-center gap-5 transition-colors hover:bg-[#eff3f41a]">
                         <div className="w-[26.25px] h-[26.25px] relative">
                         <svg viewBox="0 0 24 24" width={26.25} height={26.25}>

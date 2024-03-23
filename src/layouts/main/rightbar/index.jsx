@@ -1,3 +1,5 @@
+import ConnectPeople from "./connect-people";
+import Footer from "./footer";
 import Search from "./search";
 import Subscribe from "./subscribe";
 import Topics from "./topics";
@@ -9,6 +11,8 @@ export default function RightBar(){
                 <Search/>
                 <Subscribe/>
                 <Topics/>
+                <ConnectPeople/>
+                <Footer/>
             </aside>
     )
 
