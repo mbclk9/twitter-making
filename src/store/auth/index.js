@@ -5,7 +5,7 @@ const initialState ={
         id :1,
         username:'mbclk9',
         fullname:'Muhammet Çelik',
-        avatar:'https://pbs.twimg.com/profile_images/1507467869302501378/EQIijXeV_400x400.jpg'
+        avatar:'https://pbs.twimg.com/profile_images/1771889003421212672/o1xhnMOv_400x400.jpg'
 
     },
     accounts:[
@@ -13,7 +13,7 @@ const initialState ={
             id :1,
             username:'mbclk9',
             fullname:'Muhammet Çelik',
-            avatar:'https://pbs.twimg.com/profile_images/1507467869302501378/EQIijXeV_400x400.jpg'
+            avatar:'https://pbs.twimg.com/profile_images/1771889003421212672/o1xhnMOv_400x400.jpg'
         },
         {
             id:2,
