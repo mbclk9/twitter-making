@@ -1,5 +1,7 @@
 // import StickyHeader from "../../components/sticky-header";
 import Tab from "../../components/tab";
+import Followings from "./followings";
+import ForYou from "./for-you";
 
 export default function Home() {
 
@@ -12,10 +14,13 @@ export default function Home() {
                         <Tab.Item id="for-you" >Sana özel</Tab.Item>
                         <Tab.Item id="following">Takip edilenler</Tab.Item>
                     </Tab.Items>
-                    <Tab.Content id="for-you">Content 1</Tab.Content>
-                    <Tab.Content id="following">Content 2</Tab.Content>
+                    <Tab.Content id="for-you">
+                       <ForYou/>
+                    </Tab.Content>
+                    <Tab.Content id="following">
+                        <Followings/>
+                    </Tab.Content>
                 </Tab>
-            Home Component
         </>
     )
     

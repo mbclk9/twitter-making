@@ -11,8 +11,7 @@ export default function Item({children, id}){
                 setActive(id)
             }}>
             <div className={classNames(" relative h-[3.313rem] text-[15px] text-[#71767b] inline-flex items-center justify-center hover:bg-[#eff3f41a] transition-colors w-full top-0 ", {
-                "font-bold":active ==id,
-                "text-white":active == id,
+                "text-white font-bold":active == id,
                 "font-medium":active != id,
             }) }>
                 {children}
