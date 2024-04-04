@@ -8,7 +8,6 @@ export default function Home() {
     return (
       
         <>
-            {/* <StickyHeader/> */}
                 <Tab  activeTab="for-you">
                     <Tab.Items>
                         <Tab.Item id="for-you" >Sana özel</Tab.Item>

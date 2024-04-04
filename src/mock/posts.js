@@ -1,42 +1,5 @@
 export const posts = [
-	{
-		id: '1708632465282150796',
-		type: 'poll',
-		content: `PROTOTURK'un paylaştığı videoları seviyor musunuz?
-					Bu anket ders esnasında sorulmuştur.`,
-		poll: {
-			voted: false,
-			votes: 12,
-			answers: [
-				{
-					id: 1,
-					text: 'Evet',
-					votes: 8
-				},
-				{
-					id: 2,
-					text: 'Hayır',
-					votes: 1
-				},
-				{
-					id: 3,
-					text: 'Yaaani',
-					votes: 3
-				}
-			]
-		},
-		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1770482014581387264/7AbGS5N0_bigger.jpg',
-			username: 'ui8',
-			fullName: 'UI8'
-		},
-		stats: {
-			comments: 4.3,
-			repost: 3.4,
-			like: 96.5,
-			view: 90.34
-		}
-	},
+
 	{
 		id: '1708632465282150796',
 		type: 'photo',
@@ -56,6 +19,43 @@ export const posts = [
 			repost: 3.4,
 			like: 96.9,
 			view: 90.5
+		}
+	},
+	{
+		id: '1708632465282150796',
+		type: 'poll',
+		content: `React Projelerinde tailwindcss kullanmayı seviyor musunuz?`,
+		poll: {
+			voted: false,
+			votes: 12,
+			answers: [
+				{
+					id: 1,
+					text: 'Evet',
+					votes: 8
+				},
+				{
+					id: 2,
+					text: 'Hayır',
+					votes: 1
+				},
+				{
+					id: 3,
+					text: 'Belki',
+					votes: 3
+				}
+			]
+		},
+		account: {
+			avatar: 'https://pbs.twimg.com/profile_images/1770482014581387264/7AbGS5N0_bigger.jpg',
+			username: 'ui8',
+			fullName: 'UI8'
+		},
+		stats: {
+			comments: 4.3,
+			repost: 3.4,
+			like: 96.5,
+			view: 90.34
 		}
 	},
 	{
@@ -107,7 +107,7 @@ And people have been busy executing god-like tasks.
 		photos: [
 			'https://pbs.twimg.com/media/GKHAkhGXcAE6GIq?format=jpg&name=4096x4096',
 			'https://pbs.twimg.com/media/GKHAkg_XUAAviIy?format=jpg&name=4096x4096',
-			'https://twitter.com/VadimCarazan/status/1774912032745074744/photo/3',
+			'https://pbs.twimg.com/media/GKJ263_XMAAuils?format=jpg&name=900x900',
 			'https://pbs.twimg.com/media/GKHAkg-WIAE7W0F?format=jpg&name=4096x4096'
 		],
 		account: {
@@ -153,29 +153,51 @@ And people have been busy executing god-like tasks.
 	{
 		id: '1708707876628476134',
 		type: 'photo',
-		content: `OpenAI's latest DALL-E 3 model is officially available free to try on Bing.
-
-				The quality is insane, comparable to Midjourney.
-
-				This prompt is going viral- mimicking a creepy iPhone capture that looks insanely realistic.
-
-				Prompt in ALT tag + more examples in thread:`,
+		content: `Falcon 9 launches from pad 4E in California, adding 22 new 
+		@Starlink
+		 satellites to the constellation`,
 		photos: [
-			'https://pbs.twimg.com/media/GKByvYGWAAAosME?format=jpg&name=900x900',
-			'https://pbs.twimg.com/media/GKHUedoWQAABMAO?format=jpg&name=large',
-			'https://pbs.twimg.com/media/GKF1SjaWoAAVeb4?format=jpg&name=large',
+			'https://pbs.twimg.com/media/GKIYYXdaoAAUKB6?format=jpg&name=medium',
+			'https://pbs.twimg.com/media/GKIYZoQa0AAQSGr?format=jpg&name=4096x4096',
+			'https://pbs.twimg.com/media/GKIYjHGaAAAVDNn?format=jpg&name=4096x4096',
 		],
 		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1469296240991125519/xpZr8yYS_bigger.jpg',
-			username: 'framer',
-			fullName: 'Framer',
+			avatar: 'https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_400x400.jpg',
+			username: 'SpaceX',
+			fullName: 'SpaceX',
 			verified: true
 		},
 		stats: {
-			comments: 49.157,
-			repost: 29.949,
-			like: 969.938,
-			view: 92.499
+			comments: 9.157,
+			repost: 3.949,
+			like: 1.938,
+			view: 3.499
 		}
 	},
+]
+
+export const posts2 =[
+	{
+		id: '1708632465282150798',
+		type: 'photo',
+		content: `22 yaşındaki Türkiye’nin en genç kadın belediye başkanı Zeynep Çelik:
+		İlk projemiz 20 yataklı bir hastane.`,
+		photos: [
+			'https://pbs.twimg.com/media/GKOV6iSW8AAiOTq?format=jpg&name=medium',
+		],
+		account: {
+			avatar: 'https://pbs.twimg.com/profile_images/1347941491889549318/uvn8isXg_400x400.jpg',
+			username: 'bpthaber',
+			fullName: 'BPT',
+			verified:true
+		},
+		stats: {
+			comments: 4.4,
+			repost: 3.4,
+			like: 96.9,
+			view: 90.5
+		}
+	},
+	
+
 ]
