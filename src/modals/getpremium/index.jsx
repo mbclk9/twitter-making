@@ -1,4 +1,3 @@
-import Button from "../../../../components/button";
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Backdrop from '@mui/material/Backdrop';
@@ -16,20 +15,16 @@ const style = {
 
 };
 
-export default function Subscribe() {
+export default function GetPremium() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
-    <section>
-        <div className="bg-[#16181c] mb-4 rounded-2xl text-[#e7e9ea] border border-[#16181c] py-3 px-4 flex flex-col gap-2.5 items-start ">
-         <h6 className=" text-xl leading-6 font-extrabold">Premium a Abone Ol</h6>
-         <p className="text-[15px] leading-5">Yeni özellikleri açmak için abone ol ve uygun olman durumunda reklam geliri payı kazan.</p>
-         <Button size="medium" onClick={handleOpen}>
-           Abone Ol
-         </Button>
-       </div>
+    <div>
+      <div className='py-5 w-full items-center justify-center flex'>
+        <button onClick={handleOpen} className=' text-4xl font-bold hover:underline'>Get Premium</button>
+      </div>
       <Modal
         open={open}
         onClose={handleClose}
@@ -79,60 +74,6 @@ export default function Subscribe() {
           </Box>
         </Fade>
       </Modal>
-    </section>
+    </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useState } from 'react';
-// import Button from "../../../../components/button";
-// import GetPremium from "../../../../modals/getpremium";
-
-// export default function Subscribe() {
-//   const [premiumGoster, setPremiumGoster] = useState(false);
-
-//   const handleAboneOlClick = () => {
-//     setPremiumGoster(true);
-//   };
-
-//   return (
-//     <>
-
-
-
-    
-//       <section className="bg-[#16181c] mb-4 rounded-2xl text-[#e7e9ea] border border-[#16181c] py-3 px-4 flex flex-col gap-2.5 items-start ">
-//         <h6 className=" text-xl leading-6 font-extrabold">Premium'a Abone Ol</h6>
-//         <p className="text-[15px] leading-5">Yeni özellikleri açmak için abone ol ve uygun olman durumunda reklam geliri payı kazan.</p>
-//         <Button size="medium" onClick={handleAboneOlClick}>
-//           Abone Ol
-//         </Button>
-//       </section>
-
-//       {premiumGoster && <GetPremium />}
-//     </>
-//   );
-// }

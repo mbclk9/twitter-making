@@ -1,3 +1,4 @@
+import GetPremium from "../modals/getpremium"
 import store from "../store"
 
 const states =store.getState()
@@ -145,7 +146,7 @@ export const mainMenu = [
         }
     },
     {
-        path:'/premium',
+        path:"/premium",
         title:'Get Premium',
         icon:{
             active:(

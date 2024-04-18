@@ -34,6 +34,7 @@ export default function Menu(){
                     )}
                 </NavLink>
                 ))}
+               
                     <More/>
                     <New/>
             

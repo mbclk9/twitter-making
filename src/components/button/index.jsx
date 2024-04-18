@@ -11,6 +11,7 @@ export default function Button({ size, variant ,className, children, ...props}){
             "bg-[#1d9bf0] hover:bg-[#1a8cd8] text-white " : variant === 'primary',
             "bg-[#eff3f4] text-[#0f1419]" : variant === 'white',
             "border border-[#536471] hover:border-[#67070f] hover:bg-[#f4212e1a] hover:text-[#f4212e]" : variant === 'white-outline',
+            
             [className]:true
         }),
         ...props

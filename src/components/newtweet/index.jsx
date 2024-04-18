@@ -1,18 +1,40 @@
 import Button from "../button";
 
 export default function NewTweet(){
-   return(
-    <div>
-               <div  className=" p-4 border-b border-[#2f3336]">
-                <div className='flex flex-col'>
-                    <div className='flex flex-col  min-h-[80px] justify-between '>
-                        <div className='flex gap-3 items-center py-3 '>
-                            <img src="https://pbs.twimg.com/profile_images/1771889003421212672/o1xhnMOv_x96.jpg" alt="" width={40} height={40} className='rounded-full' />
+
+    const toggleVisibility = (selector) => {
+        const element = document.querySelector(selector); // Verilen seçiciye göre elementi seç
+        element.classList.toggle('hidden'); // 'hidden' sınıfını ekleyip çıkararak görünürlüğü değiştir
+    }
+
+    const changeOpacity = (selector, opacityValue) => {
+        const element = document.querySelector(selector); // Verilen seçiciye göre elementi seç
+        element.style.opacity = opacityValue; // Opaklığı belirtilen değere ayarla
+    }
+    
+
+   return(    
+    <>
+            <div  className=" p-4 border-b border-[#2f3336] flex ">
+                <div>
+                 <img src="https://pbs.twimg.com/profile_images/1771889003421212672/o1xhnMOv_x96.jpg" alt="" width={40} height={40} className='rounded-full' />
+                </div>
+                <div className='flex flex-col flex-1'>
+                    <div className='flex flex-col  min-h-[80px] justify-between ml-2 '>
+                        <div className='flex gap-3 items-center py-1 '>
                             <form action="">
-                                <input type="multiple" placeholder='Neler oluyor?' className='bg-black outline-none text-xl text-[#71767b] focus ' />
+                                <input 
+                                type="multiple"
+                                placeholder='Neler oluyor?' 
+                                className='bg-black outline-none text-xl text-[#71767b] focus '
+                                onClick={() => {
+                                    toggleVisibility('.privacy');
+                                    changeOpacity('.opacity', 1);
+                                }}/>
+
                             </form>
                         </div>
-                        <div className='flex items-center gap-1 '>
+                        <div className='flex items-center gap-1 privacy hidden '>
                             <div>
                                 <svg viewBox="0 0 24 24" width={16} height={16} >
                                         <path 
@@ -63,11 +85,11 @@ export default function NewTweet(){
                             </button>
                         </div>
                         <div>
-                        <Button size='small'>Gönder</Button>
+                        <Button size='small' className="opacity opacity-50">Gönder</Button>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+    </>
    )
 }

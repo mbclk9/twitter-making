@@ -1,7 +1,7 @@
 export default function Explore() {
 
     return (
-        <div>Explore Component</div>
+        <div>Explore Componente</div>
     )
     
 }

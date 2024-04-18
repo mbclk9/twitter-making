@@ -7,8 +7,8 @@ import Profile from "../pages/profile";
 import Messages from "../pages/messages";
 import Lists from "../pages/lists";
 import Community from "../pages/community";
-import Premium from "../pages/premium";
 import Bookmarks from "../pages/bookmarks";
+import GetPremium from "../modals/getpremium";
 
 
  const routes = createBrowserRouter([
@@ -17,11 +17,11 @@ import Bookmarks from "../pages/bookmarks";
         element: <MainLayout/>,
         children:[
             
-            {
-                index: true,
-                element:<Home/>
+                {
+                    index: true,
+                    element:<Home/>
 
-            },
+                },
                 {
                     path: 'explore',
                     element: <Explore/>
@@ -47,8 +47,8 @@ import Bookmarks from "../pages/bookmarks";
                     element: <Community />
                 },
                 {
-                    path: 'premium',
-                    element: <Premium/>
+                    path:'premium',
+                    element:<GetPremium/>
                 },
                 {
                     path: ':slug',

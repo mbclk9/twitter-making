@@ -1,12 +1,36 @@
 export const posts = [
 
 	{
+		id: '1708707876628476134',
+		type: 'photo',
+		content: `Falcon 9 launches from pad 4E in California, adding 22 new 
+		@Starlink
+		 satellites to the constellation`,
+		photos: [
+			'https://pbs.twimg.com/media/GKIYYXdaoAAUKB6?format=jpg&name=medium',
+			'https://pbs.twimg.com/media/GKIYZoQa0AAQSGr?format=jpg&name=4096x4096',
+			'https://pbs.twimg.com/media/GKIYjHGaAAAVDNn?format=jpg&name=4096x4096',
+		],
+		account: {
+			avatar: 'https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_400x400.jpg',
+			username: 'SpaceX',
+			fullName: 'SpaceX',
+			verified: true
+		},
+		stats: {
+			comments: 9.157,
+			repost: 3.949,
+			like: 1.938,
+			view: 3.499
+		}
+	},
+	{
 		id: '1708632465282150796',
 		type: 'photo',
 		content: `Oppenheimer, sansürsüz ve Türkçe desteği ile yeniden Prime Video'ya eklendi.`,
 		photos: [
 			'https://pbs.twimg.com/media/GKE7mnAWIAAJUAF?format=jpg&name=large',
-			'https://pbs.twimg.com/media/GKE7mnAWIAAJUAF?format=jpg&name=large',
+			'https://pbs.twimg.com/media/GKkjZYDXsAAqg2V?format=jpg&name=4096x4096',
 		],
 		account: {
 			avatar: 'https://pbs.twimg.com/profile_images/1627628628946067457/KsEChNsv_bigger.jpg',
@@ -150,30 +174,7 @@ And people have been busy executing god-like tasks.
 			view: 92.499
 		}
 	},
-	{
-		id: '1708707876628476134',
-		type: 'photo',
-		content: `Falcon 9 launches from pad 4E in California, adding 22 new 
-		@Starlink
-		 satellites to the constellation`,
-		photos: [
-			'https://pbs.twimg.com/media/GKIYYXdaoAAUKB6?format=jpg&name=medium',
-			'https://pbs.twimg.com/media/GKIYZoQa0AAQSGr?format=jpg&name=4096x4096',
-			'https://pbs.twimg.com/media/GKIYjHGaAAAVDNn?format=jpg&name=4096x4096',
-		],
-		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1697749409851985920/HbrI04tM_400x400.jpg',
-			username: 'SpaceX',
-			fullName: 'SpaceX',
-			verified: true
-		},
-		stats: {
-			comments: 9.157,
-			repost: 3.949,
-			like: 1.938,
-			view: 3.499
-		}
-	},
+	
 ]
 
 export const posts2 =[
