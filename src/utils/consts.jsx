@@ -1,4 +1,3 @@
-import GetPremium from "../modals/getpremium"
 import store from "../store"
 
 const states =store.getState()
@@ -274,4 +273,47 @@ export const topics =[
     },
     postCount: 30.2
     }
+]
+
+export const explore1 =[
+    {
+        title:'Türkiye tarihinde gündemde',
+        expo:{
+            type:'tag',
+            value:'Patisswiss'
+        },
+        counter:10.5
+    },
+    {
+        title:'Siyaset · Gündemdekiler',
+        expo:{
+            type:'regular',
+            value:'Kürdistan' 
+        },
+        counter:11.2
+    },
+    {
+        title:'Türkiye tarihinde gündemde',
+        expo:{
+            type:'regular',
+            value:'Mustafa Kemal Atatürk' 
+        },
+        counter:71.6
+    },
+    {
+        title:'İş dünyası ve finans · Gündemdekiler',
+        expo:{
+            type:'tag',
+            value:'altın' 
+        },
+        counter:13.2
+    },
+    {
+        title:'Gündemdekiler',
+        expo:{
+            type:'regular',
+            value:'Zeynep' 
+        },
+        counter:12.6
+    },
 ]

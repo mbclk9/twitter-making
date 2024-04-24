@@ -6,14 +6,14 @@ import Topics from "./topics";
 
 export default function RightBar(){
 
-    return(
-            <aside className="w-[350px] mr-2.5">
-                <Search/>
-                <Subscribe/>
-                <Topics/>
-                <ConnectPeople/>
-                <Footer/>
-            </aside>
-    )
+            return (
+              <aside className="w-[350px] mr-2.5">
+                <Search />
+                <Subscribe />
+                <Topics />
+                <ConnectPeople />
+                <Footer />
+              </aside>
+            );
 
 }
